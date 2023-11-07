@@ -6,7 +6,7 @@
     <v-app>
         <v-main>
             <v-container fluid>
-                <h1>hello</h1>
+                <h1 class="text-red">hello</h1>
             </v-container>
         </v-main>
     </v-app>
