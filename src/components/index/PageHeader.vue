@@ -12,7 +12,7 @@
 <style lang="scss" scoped>
 .header-background {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     object-fit: cover;
     position: relative; // 通常のフローに従う
     z-index: 1; // この画像を背面に表示
@@ -23,7 +23,7 @@
     height: auto;
     object-fit: cover;
     position: relative;
-    top: 130px;
+    top: 180px;
     left: 0;
     z-index: 2;
 }

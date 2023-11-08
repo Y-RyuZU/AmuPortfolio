@@ -1,8 +1,10 @@
 [
   {
     "id": "kamen",
+    "num": 1,
     "name": "仮面の女神",
     "pronaunce": "かめんのめがみ",
+    "spell": "KAENGATA DOKI",
     "theme_color": "#E93398",
     "theme_color2": "#F657AF",
     "profile_border": "#FBCAE4",
@@ -18,18 +20,38 @@
     "topic": "丁寧な施文と優れた造形により、国宝に指定されている土偶です。34cmと土偶の中ではかなりの大型で、内部は中空になっています。中が空洞になっている理由は、土器と同じように粘土紐を積み上げて作られているためです。こうした形態は中空土偶と呼ばれ、大形の土偶によく見られます。出土時、右足が壊れて胴体から外れていましたが、これは人為的に取り外したことが明らかになっています。"
   },
   {
-    "id": "kaen"
+    "id": "kaen",
+    "num": 0,
+    "name": "火焔型土器",
+    "spell": "KAENGATA DOKI",
+    "": ""
   },
   {
-    "id": "jomon_venus"
+    "id": "jomon_venus",
+    "num": 2,
+    "name": "縄文のビーナス",
+    "spell": "JOMON NO VENUS",
+    "": ""
   },
   {
-    "id": "kakku"
+    "id": "kakku",
+    "num": 3,
+    "name": "茅空",
+    "spell": "KAKKU",
+    "": ""
   },
   {
-    "id": "gassho"
+    "id": "gassho",
+    "num": 4,
+    "name": "合掌土偶",
+    "spell": "GASSHO DOGU",
+    "": ""
   },
   {
-    "id": "jomon_megami"
+    "id": "jomon_megami",
+    "num": 5,
+    "name": "縄文の女神",
+    "spell": "JOMON NO MEGAMI",
+    "": ""
   }
 ]

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
+import Footer from '@/components/Footer.vue'
 
 </script>
 
@@ -10,6 +11,7 @@ import { RouterView } from "vue-router";
             <RouterView />
 
         </v-main>
+        <Footer />
     </v-app>
 </template>
 
