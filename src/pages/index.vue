@@ -7,7 +7,9 @@
                         <div>
                             <PageHeader />
                             <!-- add positon style must refact  -->
-                            <FeaturedCharactor style="position: relative; top: -10px" />
+                            <img src="/indexPage/middlebar_character.png" alt=""
+                                :style="{ objectFit: 'cover', width: '100%', position: 'relative', top: '-20px', zIndex: '2' }" />
+                            <CharactorCarousel />
                         </div>
                     </v-col>
                 </v-row>
@@ -18,5 +20,5 @@
 
 <script setup lang="ts">
 import PageHeader from '@/components/index/PageHeader.vue'
-import FeaturedCharactor from '@/components/index/CharactorFeature.vue'
+import CharactorCarousel from '@/components/index/CharactorCarousel.vue'
 </script>
