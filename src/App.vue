@@ -6,11 +6,10 @@ import Footer from '@/components/Footer.vue'
 
 <template>
     <v-app>
-        <v-main>
-
-            <RouterView />
-
-        </v-main>
+        <RouterView />
+        <v-container>
+            <img src="" alt="">
+        </v-container>
         <Footer />
     </v-app>
 </template>

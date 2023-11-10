@@ -1,25 +1,20 @@
 <template>
-    <v-container class="d-flex justify-center">
-        <v-row justify="center">
-            <v-col cols="12">
-                <div>
-                    <PageHeader />
-                    <!-- add positon style must refact  -->
-                    <img src="/indexPage/middlebar_character.png" alt="" :style="{
-                        objectFit: 'cover',
-                        width: '100%',
-                        position: 'relative',
-                        top: '-20px',
-                        zIndex: '2'
-                    }" />
-                    <CharactorCarousel />
-                    <img src="/indexPage/middlebar_datespot.png" alt=""
-                        :style="{ objectFit: 'cover', width: '100%', position: 'relative' }" />
-                    <IconList />
-                </div>
-            </v-col>
-        </v-row>
-    </v-container>
+    <PageHeader />
+    <div>
+        <!-- add positon style must refact  -->
+        <img src="/indexPage/middlebar_character.svg" alt="" :style="{
+
+            objectFit: 'cover',
+            width: '100%',
+            position: 'relative',
+            top: '-240px',
+            zIndex: '2'
+        }" />
+        <CharactorCarousel />
+        <img src="/indexPage/middlebar_datespot.svg" alt=""
+            :style="{ objectFit: 'cover', width: '100%', position: 'relative' }" />
+        <IconList />
+    </div>
 </template>
 
 <script setup lang="ts">

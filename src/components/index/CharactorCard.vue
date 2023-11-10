@@ -1,9 +1,10 @@
-<!-- CharacterCard.vue -->
 <template>
-    <div class="d-flex flex-column align-center">
-        <img :src="`/indexPage/characters/icons/${character.id}.png`" :alt="character.name" class="mb-2">
-        <p>{{ character.name }}</p>
-        <p>{{ character.spell }}</p>
+    <div class="character-card">
+        <router-link :to="`/datespot/${character.id}`" class="character-link">
+            <img :src="`/indexPage/characters/icons/${character.id}.png`" :alt="character.name" class="mb-2">
+            <p>{{ character.name }}</p>
+            <p>{{ character.spell }}</p>
+        </router-link>
     </div>
 </template>
   
@@ -17,4 +18,15 @@ const props = defineProps({
     }
 })
 </script>
+  
+<style scoped>
+.character-card .character-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    /* Optional: This ensures that the link color is the same as the text */
+}
+</style>
   

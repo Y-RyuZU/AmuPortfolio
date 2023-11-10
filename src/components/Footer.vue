@@ -2,7 +2,5 @@
 
 
 <template>
-    <v-container>
-        <img src="/underbar.png" alt="" :style="{ objectFit: 'cover', width: '100%', position: 'relative' }" />
-    </v-container>
+    <img src="/underbar.svg" alt="" :style="{ maxWidth: '100%' }" />
 </template>
