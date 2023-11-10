@@ -1,0 +1,22 @@
+{
+  "kakku": [
+    {
+      "id": 1,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2975.5864557968225!2d140.7225139!3d41.7725732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9ef3a1f07738f5%3A0xe47eb57cda1a1f95!2z5Ye96aSo5pyd5biCIOmnheS6jOW4guWgtA!5e0!3m2!1sja!2sjp!4v1699513024432!5m2!1sja!2sjp",
+      "info": {
+        "address": "北海道函館市若松町9-19",
+        "sales_time": "6:00～14:00(1月～4月)  5:00～14:00(5月〜12月)",
+        "holiday": "年中無休",
+        "fee": "入場無料",
+        "phone_number": "0120-858-313",
+        "url": "https://www.city.chino.lg.jp/site/togariishi/",
+        "transport": "アクセス(電車)",
+        "direction": "JR 函館駅 下車 徒歩1分",
+        "parking": "約350台"
+      }
+    },
+    {
+        "id":2
+    }
+  ]
+}

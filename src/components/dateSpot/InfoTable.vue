@@ -3,27 +3,27 @@
         <table class="info-table">
             <tr class="pa-4" :style="{ borderTop: '1.5px solid #EE6BB4' }">
                 <th>住所</th>
-                <td>{{ dateSpot.info.address }}</td>
+                <td>{{ dateSpot.info?.address }}</td>
             </tr>
             <tr>
                 <th>営業時間</th>
-                <td>{{ dateSpot.info.sales_time }}</td>
+                <td>{{ dateSpot.info?.sales_time }}</td>
             </tr>
             <tr>
                 <th>料金</th>
-                <td>{{ dateSpot.info.fee }}</td>
+                <td>{{ dateSpot.info?.fee }}</td>
             </tr>
             <tr>
                 <th>電話番号</th>
-                <td>{{ dateSpot.info.phone_number }}</td>
+                <td>{{ dateSpot.info?.phone_number }}</td>
             </tr>
             <tr>
                 <th>URL</th>
-                <td>{{ dateSpot.info.url }}</td>
+                <td>{{ dateSpot.info?.url }}</td>
             </tr>
             <tr>
-                <th>{{ dateSpot.info.transport }}</th>
-                <td>{{ dateSpot.info.direction }}</td>
+                <th>{{ dateSpot.info?.transport }}</th>
+                <td>{{ dateSpot.info?.direction }}</td>
             </tr>
         </table>
     </v-container>
@@ -31,9 +31,10 @@
   
 <script setup lang="ts">
 import { ref } from 'vue';
-import dateSpots from '@/assets/dateSpots/kakku.json';
+import dateSpots from '@/assets/dateSpots/dateSpots.json';
 
-const dateSpot = ref(dateSpots[0]);
+const dateSpot = ref(dateSpots.kakku[0]);
+// console.log(dateSpot.value.info?.address);
 </script>
   
 <style scoped>

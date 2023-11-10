@@ -21,7 +21,7 @@ const routes = Object.keys(pageComponents).map((path) => {
 });
 
 routes.push({
-    path: '/datespot/:spot', // ':spot' は動的パラメータです。
+    path: '/datespot/:chara', // ':spot' は動的パラメータです。
     component: () => import('../pages/DateSpot.vue')
 });
 
