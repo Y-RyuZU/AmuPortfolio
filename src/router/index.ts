@@ -25,16 +25,24 @@ routes.push({
     component: () => import('../pages/DateSpot.vue')
 });
 
+let savedScrollPosition = 0; // トップページのスクロール位置を保持する変数
+
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes,
     scrollBehavior(to, from, savedPosition) {
-        if (savedPosition) {
-            return savedPosition;
-        } else {
-            return { top: 0 };
+        // 他のルートから "/" に戻る際、保存されたスクロール位置を使用
+        if (to.path === '/' && from.path !== '/') {
+            return { top: savedScrollPosition };
         }
+
+        // "/" から他のルートに移動する際、現在のスクロール位置を保存
+        if (from.path === '/') {
+            savedScrollPosition = window.scrollY;
+        }
+
+        // デフォルトではページのトップにスクロール
+        return { top: 0 };
     },
 });
-
 export default router;

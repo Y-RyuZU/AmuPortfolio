@@ -4,36 +4,23 @@
         <v-container>
             <v-row class="d-flex justify-center">
                 <v-col cols="12" align="center">
-                    <h1>Date Spot: {{ chara }}</h1>
-                    <img src="/dateSpot/recommendation/kakku.svg" alt="">
-
-                    <v-row class="justify-center">
-                        <div class="spots">
-                            <img :src="`/dateSpot/spot/${chara}/${charactorSpot.id}.svg`" alt="">
-                        </div>
-
-                        <!-- Googleマップ用のカラム -->
-                        <v-col cols="5" class="">
-                            <div>
-                                <iframe :src="charactorSpot.map_url" width="100%" height="331" style="border:0;"
-                                    allowfullscreen="true" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-
-                        </v-col>
-
-                        <!-- InfoTableコンポーネント用のカラム -->
-                        <v-col cols="5" class="">
-                            <InfoTable />
-                        </v-col>
-
-                    </v-row>
+                    <img :src="`/dateSpot/recommendation/${chara}.svg`" alt="">
 
                     <v-row class="d-flex justify-center">
+                        <v-col cols="12" align="center">
+                            <DateSpot v-for="spot in tmpCharactorSpot.spots" :key="spot.id" :chara="chara" :spot="spot" />
+                        </v-col>
+                    </v-row>
+
+                    <v-row class="d-flex justify-center" :style="{ marginTop: '110px' }">
                         <v-col cols="12" sm="6" md="4" lg="3">
-                            <v-btn class="text-none text-h6 py-6" color="#FF7CC5" block rounded variant="elevated" to="/">
-                                一覧に戻る
-                            </v-btn>
+                            <router-link :to="`/`" class="text-decoration-none" style="font-weight: bold;">
+                                <v-btn class="text-h6 py-6" color="#FF7CC5" block rounded
+                                    style="font-weight: bold; font-family: 'Hiragino Maru Gothic Pro', 'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic ProN', 'ヒラギノ丸ゴ ProN W4', sans-serif;"
+                                    variant="elevated">
+                                    一覧に戻る
+                                </v-btn>
+                            </router-link>
                         </v-col>
                     </v-row>
                 </v-col>
@@ -43,19 +30,51 @@
 </template>
   
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import Header from '@/components/dateSpot/Header.vue'
 import InfoTable from '@/components/dateSpot/InfoTable.vue'
 import dateSpotjson from '@/assets/dateSpots/dateSpots.json'
+import DateSpot from '@/components/dateSpot/Spot.vue'
 
 const dateSpots = ref(dateSpotjson);
-const charactorSpot = ref(dateSpots.value.kakku[0]);
-const index = 0;
-// console.log("charactor spot map", charactorSpot.value.map_url);
+const route = useRoute();
+const chara = ref(route.params.chara as string);
 
-const route = useRoute()
-const chara = ref('')
+interface Info {
+    address: string;
+    sales_time: string;
+    holiday: string;
+    fee: string;
+    phone_number: string;
+    url: string;
+    transport: string;
+    direction: string;
+    parking?: string;
+}
+
+interface Spot {
+    id: number;
+    map_url?: string;
+    info?: Info;
+}
+
+interface CharacterSpots {
+    chara: string;
+    spots: Spot[];
+}
+
+// dateSpots のデータ構造に基づいて、対応するスポットのリストを取得
+const tmpCharactorSpot = computed(() => {
+    const spots = dateSpots.value[chara.value as keyof typeof dateSpots.value] || [];
+    return {
+        chara: chara.value,
+        spots: spots
+    } as CharacterSpots;
+});
+
+console.log("tmpCharactorSpot", tmpCharactorSpot.value);
+// console.log("charactor spot map", charactorSpot.value.map_url);
 
 onMounted(() => {
     chara.value = route.params.chara as string

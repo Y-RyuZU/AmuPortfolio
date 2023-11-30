@@ -2,8 +2,10 @@
     <div class="character-card">
         <router-link :to="`/datespot/${character.id}`" class="character-link">
             <img :src="`/indexPage/characters/icons/${character.id}.png`" :alt="character.name" class="mb-2">
-            <p>{{ character.name }}</p>
-            <p>{{ character.spell }}</p>
+            <p
+                style="color: #E93398; font-size: 25px; font-weight: 600; font-family: 'Hiragino Maru Gothic Pro', 'ヒラギノ丸ゴ Pro W4', 'Hiragino Maru Gothic ProN', 'ヒラギノ丸ゴ ProN W4', sans-serif;">
+                {{ character.name }}</p>
+            <p style="color: #DCDCDC; font-size: 14px;">{{ character.spell }}</p>
         </router-link>
     </div>
 </template>

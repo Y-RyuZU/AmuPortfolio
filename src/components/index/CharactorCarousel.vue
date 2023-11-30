@@ -3,13 +3,22 @@ import charactorsData from '@/assets/charactors/charactors.json';
 import charactorImages from '@/assets/charactors/image.json';
 import { ref } from 'vue';
 
-const index = 0;
-const charactor = ref(charactorsData[index]);
+const index = 1;
+const charactor = ref(charactorsData.find((charactor) => charactor.num === index));
+
+if (charactor.value) {
+    // charactor is defined, safe to use its properties
+    console.log(charactor.value.name); // Example usage
+} else {
+    // Handle the case where charactor is undefined
+    console.log('No character found with the specified number.');
+}
+
 const iamges = ref()
 </script>
 
 <template>
-    <v-container class="d-flex justify-center mt-16">
+    <v-container class="d-flex justify-center mt-16" v-if="charactor">
         <v-col cols="5">
             <img :src="`/indexPage/characters/portraits/${charactor.id}.png`" :alt="`${charactor.name}の画像`">
         </v-col>
@@ -46,7 +55,7 @@ const iamges = ref()
             </table>
         </v-col>
     </v-container>
-    <v-container class="d-flex justify-center" :style="{ paddingBottom: '148px' }">
+    <v-container class="d-flex justify-center" :style="{ paddingBottom: '148px' }" v-if="charactor">
         <v-col cols="10">
             <p>{{ charactor.topic }}</p>
         </v-col>
