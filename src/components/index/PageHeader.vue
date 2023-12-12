@@ -12,19 +12,18 @@
 <style lang="scss" scoped>
 .header-background {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     object-fit: cover;
     position: relative; // 通常のフローに従う
+    top: -200px;
     z-index: 1; // この画像を背面に表示
 }
 
 .top-image {
     width: 100%;
     height: auto;
-    object-fit: cover;
     position: relative;
-    top: 130px;
-    left: 0;
-    z-index: 2;
+    object-fit: cover;
+    z-index: 10;
 }
 </style>
