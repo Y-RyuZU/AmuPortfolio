@@ -1,5 +1,5 @@
 <template>
-    <Header />
+    <Header/>
     <v-main>
         <v-container>
             <v-row class="d-flex justify-center">
