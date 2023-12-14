@@ -80,7 +80,7 @@ onMounted(() => {
     chara.value = route.params.chara as string
 })
 
-const img = computed(() => `@/../dateSpot/recommendation/${chara.value}.svg`);
+const img = computed(() => `@/dateSpot/recommendation/${chara.value}.svg`);
 </script>
 
 <style lang="scss">
