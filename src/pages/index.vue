@@ -10,14 +10,14 @@
         zIndex: '2'
     }">
         <!-- add positon style must refact  -->
-        <img src="@/indexPage/middlebar_character.svg" alt=""
+        <img src="@/../public/indexPage/middlebar_character.svg" alt=""
             :style="{ objectFit: 'cover', width: '100%', position: 'relative' }" />
         <CharactorList :style="{
             objectFit: 'cover',
             paddingBottom: '148px',
             witdh: '100%',
         }" />
-        <img src="@/indexPage/middlebar_datespot.svg" alt=""
+        <img src="@/../public/indexPage/middlebar_datespot.svg" alt=""
             :style="{ objectFit: 'cover', width: '100%', position: 'relative' }" />
         <div style="margin-top: 148px;">
             <IconList />
