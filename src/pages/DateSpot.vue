@@ -4,7 +4,7 @@
         <v-container>
             <v-row class="d-flex justify-center">
                 <v-col cols="12" align="center">
-                    <img :src="`/dateSpot/recommendation/${chara}.svg`" alt="">
+                    <img :src="`@/dateSpot/recommendation/${chara}.svg`" alt="">
 
                     <v-row class="d-flex justify-center">
                         <v-col cols="12" align="center">

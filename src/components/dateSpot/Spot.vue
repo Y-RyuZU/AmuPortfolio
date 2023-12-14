@@ -2,7 +2,7 @@
     <div style="position: relative;">
         <div class="spots" style="position: relative; left: 0; bottom: 0; z-index: 1;">
             <!-- ここに他のコンテンツが入ります -->
-            <img :src="`/dateSpot/spot/${chara}/${spot!.id}.svg`" alt="" style="z-index: 1;">
+            <img :src="`@/dateSpot/spot/${chara}/${spot!.id}.svg`" alt="" style="z-index: 1;">
         </div>
 
         <div style="margin-top: -341px; margin-left: -430px; z-index: 101; position: relative;">

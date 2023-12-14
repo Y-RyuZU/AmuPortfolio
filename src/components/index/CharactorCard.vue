@@ -1,6 +1,6 @@
 <template>
   <div class="character-card">
-    <router-link :to="`/datespot/${character.id}`" class="character-link">
+    <router-link :to="`@/datespot/${character.id}`" class="character-link">
 <!--      <div class="coin mb-2"-->
 <!--           @mouseover="hover = true"-->
 <!--           @mouseleave="hover = false"-->
@@ -18,10 +18,10 @@
 <!--      </div>-->
       <div class="coin">
         <div class="face front">
-          <img :src="`/indexPage/characters/icons/${character.id}.png`" :alt="character.name" class="mb-2">
+          <img :src="`@/indexPage/characters/icons/${character.id}.png`" :alt="character.name" class="mb-2">
         </div>
         <div class="face back">
-          <img :src="`/indexPage/characters/icons/${character.id}_raw.png`" :alt="character.name" class="mb-2">
+          <img :src="`@/indexPage/characters/icons/${character.id}_raw.png`" :alt="character.name" class="mb-2">
         </div>
       </div>
       <p

@@ -3,8 +3,8 @@
 
 <template>
     <header class="page-header">
-        <img class="top-image" src="/indexPage/top.png" alt="Top Image">
-        <img class="header-background" src="/indexPage/headerBg.png" alt="Header Background">
+        <img class="top-image" src="@/indexPage/top.png" alt="Top Image">
+        <img class="header-background" src="@/indexPage/headerBg.png" alt="Header Background">
     </header>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <img src="/dateSpot/topbar.svg" alt="" class="header-image" />
+        <img src="@/dateSpot/topbar.svg" alt="" class="header-image" />
     </header>
 </template>
   
