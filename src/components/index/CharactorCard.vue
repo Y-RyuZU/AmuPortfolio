@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import {defineProps, ref} from 'vue'
+import {computed, defineProps, ref} from 'vue'
 
 const hover = ref(false)
 
@@ -44,8 +44,8 @@ const props = defineProps({
   }
 })
 
-const imgUrl = new URL(`@/../indexPage/characters/icons/${props.character.id}.png`, import.meta.url).href
-const imgRawUrl = new URL(`@/../indexPage/characters/icons/${props.character.id}_raw.png`, import.meta.url).href
+const imgUrl = computed(() => `/indexPage/characters/icons/${props.character.id}.png`);
+const imgRawUrl = computed(() => `/indexPage/characters/icons/${props.character.id}_raw.png`);
 </script>
 
 <style scoped class="scss">
