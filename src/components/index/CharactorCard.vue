@@ -18,10 +18,10 @@
 <!--      </div>-->
       <div class="coin">
         <div class="face front">
-          <img :src="`@/../public/indexPage/characters/icons/${character.id}.png`" :alt="character.name" class="mb-2">
+          <img :src="imgUrl" :alt="character.name" class="mb-2">
         </div>
         <div class="face back">
-          <img :src="`@/../public/indexPage/characters/icons/${character.id}_raw.png`" :alt="character.name" class="mb-2">
+          <img :src="imgRawUrl" :alt="character.name" class="mb-2">
         </div>
       </div>
       <p
@@ -43,6 +43,9 @@ const props = defineProps({
     required: true
   }
 })
+
+const imgUrl = new URL(`@/../public/indexPage/characters/icons/${props.character.id}.png`, import.meta.url).href
+const imgRawUrl = new URL(`@/../public/indexPage/characters/icons/${props.character.id}_raw.png`, import.meta.url).href
 </script>
 
 <style scoped class="scss">
