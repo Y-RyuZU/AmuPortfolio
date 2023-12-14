@@ -2,7 +2,7 @@
     <div style="position: relative;">
         <div class="spots" style="position: relative; left: 0; bottom: 0; z-index: 1;">
             <!-- ここに他のコンテンツが入ります -->
-            <img :src="`@/../dateSpot/spot/${chara}/${spot!.id}.svg`" alt="" style="z-index: 1;">
+            <img :src="img" alt="" style="z-index: 1;">
         </div>
 
         <div style="margin-top: -341px; margin-left: -430px; z-index: 101; position: relative;">
@@ -13,11 +13,13 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import {computed, defineProps} from 'vue';
 import InfoTable from '@/components/dateSpot/InfoTable.vue';
 
 const props = defineProps({
     chara: String,
     spot: Object
 });
+
+const img = computed(() => `@/../dateSpot/spot/${props.chara}/${props.spot!.id}.svg`);
 </script>
