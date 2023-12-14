@@ -44,8 +44,8 @@ const props = defineProps({
   }
 })
 
-const imgUrl = computed(() => `/indexPage/characters/icons/${props.character.id}.png`);
-const imgRawUrl = computed(() => `/indexPage/characters/icons/${props.character.id}_raw.png`);
+const imgUrl = computed(() => `@/../indexPage/characters/icons/${props.character.id}.png`);
+const imgRawUrl = computed(() => `@/../indexPage/characters/icons/${props.character.id}_raw.png`);
 </script>
 
 <style scoped class="scss">
