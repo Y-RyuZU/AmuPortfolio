@@ -44,8 +44,8 @@ const props = defineProps({
   }
 })
 
-const imgUrl = new URL(`@/../public/indexPage/characters/icons/${props.character.id}.png`, import.meta.url).href
-const imgRawUrl = new URL(`@/../public/indexPage/characters/icons/${props.character.id}_raw.png`, import.meta.url).href
+const imgUrl = new URL(`@/../indexPage/characters/icons/${props.character.id}.png`, import.meta.url).href
+const imgRawUrl = new URL(`@/../indexPage/characters/icons/${props.character.id}_raw.png`, import.meta.url).href
 </script>
 
 <style scoped class="scss">

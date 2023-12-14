@@ -20,7 +20,7 @@ const iamges = ref()
 <template>
     <v-container class="d-flex justify-center mt-16" v-if="charactor">
         <v-col cols="5">
-            <img :src="`@/../public/indexPage/characters/portraits/${charactor.id}.png`" :alt="`${charactor.name}の画像`">
+            <img :src="`@/../indexPage/characters/portraits/${charactor.id}.png`" :alt="`${charactor.name}の画像`">
         </v-col>
         <v-col cols="5">
             <p class="text-h3 font-weight-bold" :style="{ color: charactor.theme_color }">{{ charactor.name }}</p>
