@@ -4,7 +4,7 @@
         <v-container>
             <v-row class="d-flex justify-center">
                 <v-col cols="12" align="center">
-                    <img :src="`@/dateSpot/recommendation/${chara}.svg`" alt="">
+                    <img :src="img" alt="">
 
                     <v-row class="d-flex justify-center">
                         <v-col cols="12" align="center">
@@ -79,6 +79,8 @@ console.log("tmpCharactorSpot", tmpCharactorSpot.value);
 onMounted(() => {
     chara.value = route.params.chara as string
 })
+
+const img = computed(() => `@/../dateSpot/recommendation/${chara.value}.svg`);
 </script>
 
 <style lang="scss">
