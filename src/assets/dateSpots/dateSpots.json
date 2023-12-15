@@ -151,7 +151,7 @@
     },
     {
       "id": 3,
-      "map_url": ""
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d49836.14217408882!2d140.2076252!3d38.677409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8954306407a503%3A0xe49faa47eb125de7!2z44Gd44Gw5a-M!5e0!3m2!1sja!2sjp!4v1702664487472!5m2!1sja!2sjp"
     }
   ],
   "kamen": [
@@ -175,6 +175,10 @@
     },{
       "id":2,
       "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.3171866463836!2d138.25167439999998!3d36.012547100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c50511e0469e3%3A0x292ece36918a0019!2sYatsugatake%20Jomon%20Natural%20Hotspring%20Togariishi%20no%20Yu!5e0!3m2!1sen!2sjp!4v1699664123537!5m2!1sen!2sjp"
+    },
+    {
+        "id":3,
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.3171866463836!2d138.25167439999998!3d36.012547100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c50511e0469e3%3A0x292ece36918a0019!2z5YWr44O25bKz57iE5paH5aSp54S25rip5rOJIOWwluefs-OBrua5rw!5e0!3m2!1sja!2sjp!4v1702664435662!5m2!1sja!2sjp"
     }
   ],
   "gassho":[
@@ -185,6 +189,10 @@
     {
       "id":2,
       "map_url":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12140.153578617726!2d141.4912714!3d40.4744156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b4d11e388d3bd%3A0xe622b5943d4579aa!2sKorekawa%20sekkijidai-iseki%20sites!5e0!3m2!1sen!2sjp!4v1699664698894!5m2!1sen!2sjp"
+    },
+    {
+      "id":3,
+      "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.6855272198386!2d141.4529163!3d40.526441399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b4e1fdd40214b%3A0x4eb4f320775bc595!2z5YWr6aOf44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1702664362640!5m2!1sja!2sjp"
     }
   ]
 }
